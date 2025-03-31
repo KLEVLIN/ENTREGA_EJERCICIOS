@@ -1,0 +1,14 @@
+Proceso SIMULACION_CARRERA_HASTA_META
+    Definir distanciaTotal, pasos, avance, distanciaAvanzada Como Entero
+    distanciaTotal <- 101 
+    distanciaAvanzada <- 0 
+    pasos <- 0              
+    Escribir "El atleta inicia su recorrido..."
+    Mientras distanciaAvanzada < distanciaTotal Hacer
+        pasos <- pasos + 1
+        avance <- Aleatorio(1,10)
+        distanciaAvanzada <- distanciaAvanzada + avance
+        Escribir "Paso ", pasos, ": Avanzó ", avance, " metros. Distancia total: ", distanciaAvanzada, " metros."
+    FinMientras
+    Escribir "El atleta ha superado los 100 metros en ", pasos, " pasos con un total de ", distanciaAvanzada, " metros."
+FinProceso
